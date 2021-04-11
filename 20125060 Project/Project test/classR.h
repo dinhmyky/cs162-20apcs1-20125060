@@ -8,6 +8,6 @@ struct classR
 	int num_of_students;
 	student* member;   // class 20CTT1; 20CTT1.member[]
 };
-void createAClass(classR& _init_, ifstream& fin);
-void addStudent2Class(classR& _this_class_, ifstream& fin);
+void createAClass(string path, classR& _init_, ifstream& fin);
+void addStudent2Class(string path, classR& _this_class_, ifstream& fin);
 #endif 

@@ -13,14 +13,14 @@ void inputAStudent(student& a, ifstream& fin)
     inputADate(a.Date_of_Birth, fin);
     getline(fin, a.SocialID);
 }
-void outputAStudent(student& a, ofstream& fout) 
+void saveAStudent(student& a, ofstream& fout) 
 {
-    fout << "No: " << a.No << endl;
-    fout << "Student ID: " << a.StudentID << endl;
-    fout << "First Name: " << a.First_name << endl;
-    fout << "Last Name: " << a.Last_name << endl;
-    fout << "Gender: " << a.Gender << endl;
-    fout << "Date of birth: ";
+    fout << "No:" << '\t'<<a.No << endl;
+    fout << "Student ID:" << '\t' << a.StudentID << endl;
+    fout << "First Name:" << '\t' << a.First_name << endl;
+    fout << "Last Name:" << '\t' << a.Last_name << endl;
+    fout << "Gender:" << '\t' << a.Gender << endl;
+    fout << "Date of birth:" << '\t';
     outputADate(a.Date_of_Birth, fout);
-    fout << "Social ID: "<<a.SocialID << endl;
+    fout << "Social ID:" << '\t' <<a.SocialID << endl;
 }
