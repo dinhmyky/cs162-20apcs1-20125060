@@ -1,3 +1,5 @@
+#include "Student.h"
+#include "Date.h"
 #include "classR.h"
 #include <iostream>
 using namespace std;
